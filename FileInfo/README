@@ -1,12 +1,14 @@
 FileInfo
 ========
 * https://www.mediawiki.org/wiki/Extension:FileInfo
+
 Installation
 ========
 To install this extension, add the following to LocalSettings.php:
 ```
 require_once("$IP/extensions/FileInfo/FileInfo.php");
 ```
+
 Other info
 ========
 ```
