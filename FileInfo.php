@@ -1,7 +1,7 @@
 <?php
 
 // Stub extension created a couple years ago
-// (c) Brion Vibber 2007-2011
+// (c) Brion Vibber 2007-2011 
 // GPLv2 blah blah
 
 // @todo add other file metadata types via {{#fileinfo:...}}
