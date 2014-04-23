@@ -9,6 +9,10 @@ To install this extension, add the following to LocalSettings.php:
 require_once("$IP/extensions/FileInfo/FileInfo.php");
 ```
 
+Usage
+========
+`{{#filesize:Image.png}}` will return something like `45279`
+
 Other info
 ========
 ```
