@@ -2,6 +2,7 @@
 * https://www.mediawiki.org/wiki/Extension:FileInfo
 
 ## Installation
+Download https://github.com/1v/FileInfo/archive/master.zip
 To install this extension, add the following to LocalSettings.php:
 ```
 require_once("$IP/extensions/FileInfo/FileInfo.php");
