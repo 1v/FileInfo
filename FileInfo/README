@@ -1,3 +1,25 @@
 FileInfo
 ========
 * https://www.mediawiki.org/wiki/Extension:FileInfo
+
+```
+ iiprop              - What image information to get:
+                        timestamp     - Adds timestamp for the uploaded version
+                        user          - Adds the user who uploaded the image version
+                        userid        - Add the user ID that uploaded the image version
+                        comment       - Comment on the version
+                        parsedcomment - Parse the comment on the version
+                        url           - Gives URL to the image and the description page
+                        size          - Adds the size of the image in bytes and the height, width and page count (if applicable)
+                        dimensions    - Alias for size
+                        sha1          - Adds SHA-1 hash for the image
+                        mime          - Adds MIME type of the image
+                        thumbmime     - Adds MIME type of the image thumbnail (requires url)
+                        mediatype     - Adds the media type of the image
+                        metadata      - Lists EXIF metadata for the version of the image
+                        archivename   - Adds the file name of the archive version for non-latest versions
+                        bitdepth      - Adds the bit depth of the version
+                       Values (separate with '|'): timestamp, user, userid, comment, parsedcomment, url, size, dimensions, sha1, mime, thumbmime,
+                           mediatype, metadata, archivename, bitdepth
+                       Default: timestamp|user
+```
