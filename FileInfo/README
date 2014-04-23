@@ -1,20 +1,16 @@
-FileInfo
-========
+# FileInfo
 * https://www.mediawiki.org/wiki/Extension:FileInfo
 
-Installation
-======
+## Installation
 To install this extension, add the following to LocalSettings.php:
 ```
 require_once("$IP/extensions/FileInfo/FileInfo.php");
 ```
 
-Usage
-========
+## Usage
 `{{#filesize:Image.png}}` will return something like `45279`
 
-Other info
-========
+## Other info
 ```
  iiprop  - What image information to get:
             timestamp     - Adds timestamp for the uploaded version
