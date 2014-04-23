@@ -6,8 +6,7 @@
 
 // @todo add other file metadata types via {{#fileinfo:...}}
 
-$dir = dirname(__FILE__) . '/';
-$wgExtensionMessagesFiles['FileInfoMagic'] = $dir . 'FileInfo.i18n.magic.php';
+$wgExtensionMessagesFiles['FileInfoMagic'] = dirname(__FILE__)."/FileInfo.i18n.magic.php";
 
 # Define a setup function
 $wgExtensionFunctions[] = 'efFilesizeParserFunction_Setup';
@@ -15,18 +14,18 @@ $wgExtensionFunctions[] = 'efFilesizeParserFunction_Setup';
 function efFilesizeParserFunction_Setup() {
 	global $wgParser;
 	# Set a function hook associating the "filesize" magic word with our function
-	$wgParser->setFunctionHook( 'filesize', 'efFilesizeParserFunction_Render' );
+	$wgParser->setFunctionHook("filesize", "efFilesizeParserFunction_Render");
 }
 
-function efFilesizeParserFunction_Render( &$parser, $filename = '' ) {
+function efFilesizeParserFunction_Render(&$parser, $filename = "") {
 	# The parser function itself
 	# The input parameters are wikitext with templates expanded
 	# The output should be wikitext too
-	$file = wfFindFile( $filename );
-	if( $file && $file->exists() ) {
+	$file = wfFindFile($filename);
+	if ($file && $file->exists()) {
 		global $wgContLang;
-		return $wgContLang->formatSize( $file->getSize() );
+		return $file->getSize();
 	} else {
-		return '';
+		return "";
 	}
 }
