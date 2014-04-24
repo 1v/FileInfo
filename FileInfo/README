@@ -4,7 +4,7 @@
 ## Installation
 Download https://github.com/1v/FileInfo/archive/master.zip
 
-To install this extension move `FileInfo` folder to `extensions` dir. Add the following to LocalSettings.php:
+To install this extension move `FileInfo` folder to `extensions` dir. Add the following to `LocalSettings.php`:
 ```
 require_once("$IP/extensions/FileInfo/FileInfo.php");
 ```
